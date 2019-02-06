@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    
+    <title>Lat Long Finder</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='main.css') }}">
+  </head>
+  <body>
+        
+    <section class="form-style-10">
+      <form action="/result" method="POST">
+    
+          <div class="section"><span>* </span>Lat Long Finder</div>
+      
+          <div class="inner-wrap">
+              <label>Country<input type="text" name="country" /></label>
+          </div>
+
+          <input type="submit" value="Submit"/>
+          
+      </form>
+
+      
+  </section>
+    
+
+  </body>
+  </html>
